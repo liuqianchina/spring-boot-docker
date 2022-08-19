@@ -23,6 +23,8 @@ public class ThreadLocalTest {
     public static void main(String[] args) {
         ThreadLocalTest.addMessage("Hello Thread Local Message 1");
         System.out.println(threadLocal.get().messages);
-        ThreadLocalTest.clearAllMessage();
+        System.out.println(ThreadLocalTest.class.getClassLoader());
+        System.out.println(ThreadLocalTest.class.getClassLoader().getParent());
+        System.out.println(ThreadLocalTest.class.getClassLoader().getParent().getParent());
     }
 }

@@ -1,0 +1,11 @@
+server:
+  port: 8080
+
+spring:
+  jackson:
+    default-property-inclusion: non_empty
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: lj1989xl
+    url: jdbc:postgresql://localhost:5432/postgres
